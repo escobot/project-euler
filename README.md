@@ -6,5 +6,9 @@ My Project Euler Solutions
 
 ## Usage
 ```sh
-python3 001.py
+# create a virtual environment (venv)
+python3 -m venv venv && source venv/bin/activate
+
+# run a specific file
+python 001.py
 ```
