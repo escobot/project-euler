@@ -10,5 +10,5 @@ My Project Euler Solutions
 python3 -m venv venv && source venv/bin/activate
 
 # run a specific file
-python 001.py
+python p001.py
 ```
