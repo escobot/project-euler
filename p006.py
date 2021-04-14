@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # Sum square difference
 # Problem 6 
 # The sum of the squares of the first ten natural numbers is,
@@ -11,12 +9,21 @@
 # Find the difference between the sum of the squares of the first 
 # one hundred natural numbers and the square of the sum.
 
-sum_of_squares = 0
-square_of_sums = 0
+def solution(limit):
+    sum_of_squares = 0
+    square_of_sums = 0
 
-for i in range(1,101):
-    sum_of_squares = sum_of_squares + i*i
-    square_of_sums = square_of_sums + i
-square_of_sums = square_of_sums * square_of_sums
+    for i in range(1, limit+1):
+        sum_of_squares = sum_of_squares + i*i
+        square_of_sums = square_of_sums + i
+    square_of_sums = square_of_sums * square_of_sums
+    return square_of_sums - sum_of_squares
 
-print(square_of_sums - sum_of_squares)
+
+def main():
+    ans = solution(100)
+    print(ans)
+
+
+if __name__ == '__main__':
+    main()
